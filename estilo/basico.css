@@ -4,6 +4,90 @@
     text-align: center;
   
 }
+.barra{
+    width:100%;
+    height: 70px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.tablet{
+    display:none;
+}
+
+.desktop{
+    display: none;
+}
+
+.mobile{
+    font-size:50px;
+    color:white;
+}
+
+.conteudo{
+    text-align: center;
+}
+
+.botao{
+    margin-top: 20%;
+    background-color: chocolate;
+    color: rgb(53, 220, 20);
+    text-align: center;
+    width: 80%;
+    height: 40%;
+    font-size: 40px;
+}
+
+@media (min-width:800px){
+    .desktop{display:none;}
+    .mobile{display: none;}
+
+    .barra{
+        background-color: navy;
+        height:80px;
+    }
+
+    .tablet{
+        font-size: 55px;
+        color: grey;
+        display: inline;
+    }
+
+    .conteudo{
+        text-align: right;
+    }
+    
+    .botao{
+        margin-top: 0%;
+        background-color: rgb(133, 57, 3);
+        color: rgb(20, 109, 2);
+        width: 70px;    
+        font-size: 10px;
+    }
+
+
+}
+
+@media (min-width:1228px){
+    .mobile{display: none;}
+    .tablet{display: none;}
+
+
+    .barra{
+        background-color: dodgerblue;
+        height:95px;
+    }
+
+    .desktop{
+        display:inline;
+        font-size: 65px;
+        color: black;
+    }
+    .conteudo{
+        text-align: left;
+    }
+}
+
 body{
     background-color: white;
 }
